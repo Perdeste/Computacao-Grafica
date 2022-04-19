@@ -15,3 +15,20 @@ D:\UEM\CG\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.pdb
 D:\UEM\CG\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.genruntimeconfig.cache
 D:\UEM\CG\Gerador3D\3DGEN\obj\Debug\net6.0-windows\ref\3DGEN.dll
 D:\UEM\CG\Gerador3D\3DGEN\obj\Debug\net6.0-windows\_3DGEN.Main.resources
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\bin\Debug\net6.0-windows\3DGEN.exe
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\bin\Debug\net6.0-windows\3DGEN.deps.json
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\bin\Debug\net6.0-windows\3DGEN.runtimeconfig.json
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\bin\Debug\net6.0-windows\3DGEN.dll
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\bin\Debug\net6.0-windows\3DGEN.pdb
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.csproj.AssemblyReference.cache
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\_3DGEN.Main.resources
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.csproj.GenerateResource.cache
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.GeneratedMSBuildEditorConfig.editorconfig
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.AssemblyInfoInputs.cache
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.AssemblyInfo.cs
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.csproj.CoreCompileInputs.cache
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.dll
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\refint\3DGEN.dll
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.pdb
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.genruntimeconfig.cache
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\ref\3DGEN.dll
