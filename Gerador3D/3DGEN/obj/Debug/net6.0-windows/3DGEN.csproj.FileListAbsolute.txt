@@ -32,3 +32,4 @@ D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\refint\3DG
 D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.pdb
 D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\3DGEN.genruntimeconfig.cache
 D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\ref\3DGEN.dll
+D:\UEM\Computação Gráfica\Gerador3D\3DGEN\obj\Debug\net6.0-windows\_3DGEN.Properties.Resources.resources

@@ -12,22 +12,13 @@ namespace _3DGEN
 
         float ymin = float.MaxValue;
         float ymax = float.MinValue;
+
+        string entrada = "";
+        private OpenFileDialog ofd = new OpenFileDialog();
         public Main()
         {
             InitializeComponent();
 
-        }
- 
-        private void imprimirMatriz(int[,] matriz)
-        {
-            for (int a = 0; a < matriz.GetLength(0); a++)
-            {
-                for (int b = 0; b < matriz.GetLength(1); b++)
-                {
-                    textBoxTeste.AppendText(matriz[a,b].ToString() + " ");
-                }
-                textBoxTeste.AppendText("\r\n");
-            }
         }
 
         private float[,] produtoMatriz(float[,] matrizA, float[,] matrizB)
@@ -137,15 +128,6 @@ namespace _3DGEN
                 {0,0,1}
             };
 
-            /*for (int a = 0; a < 3; a++)
-            {
-                for (int b = 0; b < 3; b++)
-                {
-                    textBoxTeste.AppendText(saida[a,b].ToString() + " ");
-                }
-                textBoxTeste.AppendText("\r\n");
-            }*/
-
             return saida;
         }
 
@@ -196,8 +178,6 @@ namespace _3DGEN
         {
             try
             {
-                string entrada = "D:\\UEM\\Computação Gráfica\\" + textBoxEntrada.Text + ".txt";
-
                 string[] linhas = System.IO.File.ReadAllLines(entrada);
 
                 bool faces = false;
@@ -295,6 +275,17 @@ namespace _3DGEN
         private void numericPV_z_ValueChanged(object sender, EventArgs e)
         {
             if (generateClick) generateProjection();
+        }
+
+        private void button_open_file_dialogbutton_open_file_dialog_Click(object sender, EventArgs e)
+        {
+            if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                entrada = ofd.FileName;
+                string[] file_split = ofd.FileName.Split('\\');
+                textBoxEntrada.Text = file_split[file_split.Length - 1];
+            }
+
         }
     }
 }

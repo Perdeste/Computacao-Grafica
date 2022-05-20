@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.numericPV_x = new System.Windows.Forms.NumericUpDown();
             this.TÍTULO = new System.Windows.Forms.Label();
             this.painelDesenho = new System.Windows.Forms.Panel();
-            this.textBoxTeste = new System.Windows.Forms.TextBox();
             this.numericPV_y = new System.Windows.Forms.NumericUpDown();
             this.buttonGenerate = new System.Windows.Forms.Button();
             this.numericPV_z = new System.Windows.Forms.NumericUpDown();
@@ -40,6 +40,7 @@
             this.labelPVY = new System.Windows.Forms.Label();
             this.labelPVX = new System.Windows.Forms.Label();
             this.groupBoxEntrada = new System.Windows.Forms.GroupBox();
+            this.button_open_file_dialogbutton_open_file_dialog = new System.Windows.Forms.Button();
             this.textBoxEntrada = new System.Windows.Forms.TextBox();
             this.groupBoxPlano = new System.Windows.Forms.GroupBox();
             this.labelPonto3Z = new System.Windows.Forms.Label();
@@ -106,7 +107,7 @@
             this.TÍTULO.AutoSize = true;
             this.TÍTULO.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TÍTULO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TÍTULO.Location = new System.Drawing.Point(12, 9);
+            this.TÍTULO.Location = new System.Drawing.Point(27, 24);
             this.TÍTULO.Name = "TÍTULO";
             this.TÍTULO.Size = new System.Drawing.Size(366, 45);
             this.TÍTULO.TabIndex = 1;
@@ -121,15 +122,6 @@
             this.painelDesenho.Size = new System.Drawing.Size(800, 600);
             this.painelDesenho.TabIndex = 2;
             this.painelDesenho.Paint += new System.Windows.Forms.PaintEventHandler(this.painelDesenho_Paint);
-            // 
-            // textBoxTeste
-            // 
-            this.textBoxTeste.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxTeste.Location = new System.Drawing.Point(12, 520);
-            this.textBoxTeste.Multiline = true;
-            this.textBoxTeste.Name = "textBoxTeste";
-            this.textBoxTeste.Size = new System.Drawing.Size(397, 104);
-            this.textBoxTeste.TabIndex = 14;
             // 
             // numericPV_y
             // 
@@ -159,7 +151,7 @@
             // 
             this.buttonGenerate.BackColor = System.Drawing.Color.Red;
             this.buttonGenerate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonGenerate.Location = new System.Drawing.Point(12, 467);
+            this.buttonGenerate.Location = new System.Drawing.Point(12, 533);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(397, 47);
             this.buttonGenerate.TabIndex = 6;
@@ -200,7 +192,7 @@
             this.groupBoxPV.Controls.Add(this.numericPV_y);
             this.groupBoxPV.Controls.Add(this.numericPV_z);
             this.groupBoxPV.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxPV.Location = new System.Drawing.Point(12, 160);
+            this.groupBoxPV.Location = new System.Drawing.Point(12, 198);
             this.groupBoxPV.Name = "groupBoxPV";
             this.groupBoxPV.Size = new System.Drawing.Size(397, 99);
             this.groupBoxPV.TabIndex = 13;
@@ -236,22 +228,34 @@
             // 
             // groupBoxEntrada
             // 
+            this.groupBoxEntrada.Controls.Add(this.button_open_file_dialogbutton_open_file_dialog);
             this.groupBoxEntrada.Controls.Add(this.textBoxEntrada);
             this.groupBoxEntrada.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxEntrada.Location = new System.Drawing.Point(12, 69);
+            this.groupBoxEntrada.Location = new System.Drawing.Point(12, 95);
             this.groupBoxEntrada.Name = "groupBoxEntrada";
             this.groupBoxEntrada.Size = new System.Drawing.Size(397, 85);
             this.groupBoxEntrada.TabIndex = 14;
             this.groupBoxEntrada.TabStop = false;
             this.groupBoxEntrada.Text = "Arquivo De Entrada";
             // 
+            // button_open_file_dialogbutton_open_file_dialog
+            // 
+            this.button_open_file_dialogbutton_open_file_dialog.Image = ((System.Drawing.Image)(resources.GetObject("button_open_file_dialogbutton_open_file_dialog.Image")));
+            this.button_open_file_dialogbutton_open_file_dialog.Location = new System.Drawing.Point(339, 33);
+            this.button_open_file_dialogbutton_open_file_dialog.Name = "button_open_file_dialogbutton_open_file_dialog";
+            this.button_open_file_dialogbutton_open_file_dialog.Size = new System.Drawing.Size(42, 34);
+            this.button_open_file_dialogbutton_open_file_dialog.TabIndex = 13;
+            this.button_open_file_dialogbutton_open_file_dialog.UseVisualStyleBackColor = true;
+            this.button_open_file_dialogbutton_open_file_dialog.Click += new System.EventHandler(this.button_open_file_dialogbutton_open_file_dialog_Click);
+            // 
             // textBoxEntrada
             // 
             this.textBoxEntrada.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxEntrada.Location = new System.Drawing.Point(12, 33);
             this.textBoxEntrada.Name = "textBoxEntrada";
-            this.textBoxEntrada.PlaceholderText = "Digite o nome do arquivo .txt";
-            this.textBoxEntrada.Size = new System.Drawing.Size(369, 34);
+            this.textBoxEntrada.PlaceholderText = "ex.: piramide.txt";
+            this.textBoxEntrada.ReadOnly = true;
+            this.textBoxEntrada.Size = new System.Drawing.Size(321, 34);
             this.textBoxEntrada.TabIndex = 12;
             // 
             // groupBoxPlano
@@ -275,7 +279,7 @@
             this.groupBoxPlano.Controls.Add(this.numericPlanoPonto1_z);
             this.groupBoxPlano.Controls.Add(this.numericPlanoPonto2_z);
             this.groupBoxPlano.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxPlano.Location = new System.Drawing.Point(12, 265);
+            this.groupBoxPlano.Location = new System.Drawing.Point(12, 316);
             this.groupBoxPlano.Name = "groupBoxPlano";
             this.groupBoxPlano.Size = new System.Drawing.Size(397, 196);
             this.groupBoxPlano.TabIndex = 14;
@@ -530,7 +534,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 644);
-            this.Controls.Add(this.textBoxTeste);
             this.Controls.Add(this.groupBoxPlano);
             this.Controls.Add(this.groupBoxEntrada);
             this.Controls.Add(this.groupBoxPV);
@@ -585,7 +588,6 @@
         private NumericUpDown numericPlanoPonto1_z;
         private NumericUpDown numericPlanoPonto2_z;
         private TextBox textBoxEntrada;
-        private TextBox textBoxTeste;
         private Label labelPonto1X;
         private Label labelPonto1Y;
         private Label labelPVZ;
@@ -598,5 +600,6 @@
         private Label labelPonto2Y;
         private Label labelPonto2X;
         private Label labelPonto1;
+        private Button button_open_file_dialogbutton_open_file_dialog;
     }
 }
