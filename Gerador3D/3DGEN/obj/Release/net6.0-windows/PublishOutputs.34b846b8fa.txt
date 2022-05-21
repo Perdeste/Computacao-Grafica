@@ -1,5 +1,0 @@
-C:\Users\thiag\Desktop\CG - Avaliaçao 3\3DGEN\3DGEN.exe
-C:\Users\thiag\Desktop\CG - Avaliaçao 3\3DGEN\3DGEN.dll
-C:\Users\thiag\Desktop\CG - Avaliaçao 3\3DGEN\3DGEN.deps.json
-C:\Users\thiag\Desktop\CG - Avaliaçao 3\3DGEN\3DGEN.runtimeconfig.json
-C:\Users\thiag\Desktop\CG - Avaliaçao 3\3DGEN\3DGEN.pdb
